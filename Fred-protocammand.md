@@ -1,0 +1,1 @@
+ls ./proto/alice/checkers/v1 | xargs -I {} protoc   --plugin="/home/fcooker/node_modules/ts-proto/protoc-gen-ts_proto"   --ts_proto_out="./client/src/types/generated"   --proto_path="./proto"   --ts_proto_opt="esModuleInterop=true,forceLong=long,useOptionals=messages"   alice/checkers/v1/{}
